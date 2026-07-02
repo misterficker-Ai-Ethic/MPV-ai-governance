@@ -1,14 +1,2 @@
-{
-  "company_name": "Example Company",
-  "use_case_name": "Internal AI-supported document review",
-  "ai_system_name": "AI review assistant",
-  "uses_personal_data": true,
-  "human_review": true,
-  "risk_level": "medium",
-  "recommended_measures": [
-    "Document the use case",
-    "Review data sources",
-    "Define human oversight"
-  ]
-}
+
 
