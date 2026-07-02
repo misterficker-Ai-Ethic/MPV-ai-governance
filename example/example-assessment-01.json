@@ -1,9 +1,13 @@
 {
   "company_name": "Example Company",
   "use_case_name": "Internal AI-supported document review",
+  "department": "Legal",
+  "purpose": "Support internal document checks and speed up first-level review",
   "ai_system_name": "AI review assistant",
+  "data_source": "Internal company documents",
   "uses_personal_data": true,
   "human_review": true,
+  "decision_impact": "medium",
   "risk_level": "medium",
   "recommended_measures": [
     "Document the use case",
@@ -11,3 +15,4 @@
     "Define human oversight"
   ]
 }
+
