@@ -1,1 +1,47 @@
-test
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/assessment.schema.json",
+  "title": "AI Governance Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "use_case_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ai_system_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uses_personal_data": {
+      "type": "boolean"
+    },
+    "human_review": {
+      "type": "boolean"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "recommended_measures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "company_name",
+    "use_case_name",
+    "ai_system_name",
+    "uses_personal_data",
+    "human_review",
+    "risk_level"
+  ]
+}
+
