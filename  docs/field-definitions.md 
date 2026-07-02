@@ -2,28 +2,35 @@
 
 - company_name
   - type: string
+  - required: yes
   - description: Name of the company.
 
 - use_case_name
   - type: string
+  - required: yes
   - description: Name of the AI use case.
 
 - ai_system_name
   - type: string
+  - required: yes
   - description: Name of the AI system or tool used.
 
 - uses_personal_data
   - type: boolean
+  - required: yes
   - description: Indicates whether personal data is involved.
 
 - human_review
   - type: boolean
+  - required: yes
   - description: Indicates whether a human reviews or approves the output.
 
 - risk_level
   - type: string
+  - required: yes
   - description: Overall risk assessment level.
 
 - recommended_measures
   - type: array
+  - required: no
   - description: Suggested governance actions or next steps.
