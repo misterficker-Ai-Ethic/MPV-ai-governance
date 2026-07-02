@@ -1,1 +1,10 @@
- 
+ # Field list
+
+- company_name
+- use_case_name
+- ai_system_name
+- uses_personal_data
+- human_review
+- risk_level
+- recommended_measures
+
