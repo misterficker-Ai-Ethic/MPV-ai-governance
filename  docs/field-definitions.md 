@@ -4,9 +4,13 @@
 |---|---|---|---|---|
 | company_name | string | yes | free text | Name of the company. |
 | use_case_name | string | yes | free text | Name of the AI use case. |
+| department | string | no | free text | Department or business unit responsible for the use case. |
+| purpose | string | yes | free text | Purpose of the AI use case. |
 | ai_system_name | string | yes | free text | Name of the AI system or tool used. |
+| data_source | string | no | free text | Main source of the data used by the AI system. |
 | uses_personal_data | boolean | yes | true, false | Indicates whether personal data is involved. |
 | human_review | boolean | yes | true, false | Indicates whether a human reviews or approves the output. |
+| decision_impact | string | no | low, medium, high | Level of impact the AI-supported decision may have. |
 | risk_level | string | yes | low, medium, high | Overall risk assessment level. |
 | recommended_measures | array | no | list of text values | Suggested governance actions or next steps. |
 
