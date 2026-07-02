@@ -13,7 +13,19 @@
       "type": "string",
       "minLength": 1
     },
+    "department": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
     "ai_system_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_source": {
       "type": "string",
       "minLength": 1
     },
@@ -22,6 +34,10 @@
     },
     "human_review": {
       "type": "boolean"
+    },
+    "decision_impact": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
     },
     "risk_level": {
       "type": "string",
@@ -38,6 +54,7 @@
   "required": [
     "company_name",
     "use_case_name",
+    "purpose",
     "ai_system_name",
     "uses_personal_data",
     "human_review",
