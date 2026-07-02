@@ -1,43 +1,14 @@
 # Field definitions
 
-- company_name
-  - type: string
-  - required: yes
-  - valid_values: free text
-  - description: Name of the company.
+| Field | Type | Required | Valid values | Description |
+|---|---|---|---|---|
+| company_name | string | yes | free text | Name of the company. |
+| use_case_name | string | yes | free text | Name of the AI use case. |
+| ai_system_name | string | yes | free text | Name of the AI system or tool used. |
+| uses_personal_data | boolean | yes | true, false | Indicates whether personal data is involved. |
+| human_review | boolean | yes | true, false | Indicates whether a human reviews or approves the output. |
+| risk_level | string | yes | low, medium, high | Overall risk assessment level. |
+| recommended_measures | array | no | list of text values | Suggested governance actions or next steps. |
 
-- use_case_name
-  - type: string
-  - required: yes
-  - valid_values: free text
-  - description: Name of the AI use case.
 
-- ai_system_name
-  - type: string
-  - required: yes
-  - valid_values: free text
-  - description: Name of the AI system or tool used.
 
-- uses_personal_data
-  - type: boolean
-  - required: yes
-  - valid_values: true, false
-  - description: Indicates whether personal data is involved.
-
-- human_review
-  - type: boolean
-  - required: yes
-  - valid_values: true, false
-  - description: Indicates whether a human reviews or approves the output.
-
-- risk_level
-  - type: string
-  - required: yes
-  - valid_values: low, medium, high
-  - description: Overall risk assessment level.
-
-- recommended_measures
-  - type: array
-  - required: no
-  - valid_values: list of text values
-  - description: Suggested governance actions or next steps.
