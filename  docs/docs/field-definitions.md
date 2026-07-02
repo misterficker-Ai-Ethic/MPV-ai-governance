@@ -1,0 +1,11 @@
+# Field definitions
+
+| Field | Type | Required | Valid values | Description |
+|---|---|---|---|---|
+| company_name | string | yes | free text | Name of the company. |
+| use_case_name | string | yes | free text | Name of the AI use case. |
+| ai_system_name | string | yes | free text | Name of the AI system or tool used. |
+| uses_personal_data | boolean | yes | true, false | Indicates whether personal data is involved. |
+| human_review | boolean | yes | true, false | Indicates whether a human reviews or approves the output. |
+| risk_level | string | yes | low, medium, high | Overall risk assessment level. |
+| recommended_measures | array | no | list of text values | Suggested governance actions or next steps. |
