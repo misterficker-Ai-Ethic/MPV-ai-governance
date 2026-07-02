@@ -1,10 +1,10 @@
- # Field list
+# Field list
 
-- company_name
-- use_case_name
-- ai_system_name
-- uses_personal_data
-- human_review
-- risk_level
-- recommended_measures
+- company_name — Name of the company.
+- use_case_name — Name of the AI use case.
+- ai_system_name — Name of the AI system or tool used.
+- uses_personal_data — Indicates whether personal data is involved.
+- human_review — Indicates whether a human reviews or approves the output.
+- risk_level — Overall risk assessment level.
+- recommended_measures — Suggested governance actions or next steps.
 
