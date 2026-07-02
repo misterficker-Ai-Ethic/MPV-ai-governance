@@ -1,10 +1,29 @@
-# Field list
+# Field definitions
 
-- company_name — Name of the company.
-- use_case_name — Name of the AI use case.
-- ai_system_name — Name of the AI system or tool used.
-- uses_personal_data — Indicates whether personal data is involved.
-- human_review — Indicates whether a human reviews or approves the output.
-- risk_level — Overall risk assessment level.
-- recommended_measures — Suggested governance actions or next steps.
+- company_name
+  - type: string
+  - description: Name of the company.
 
+- use_case_name
+  - type: string
+  - description: Name of the AI use case.
+
+- ai_system_name
+  - type: string
+  - description: Name of the AI system or tool used.
+
+- uses_personal_data
+  - type: boolean
+  - description: Indicates whether personal data is involved.
+
+- human_review
+  - type: boolean
+  - description: Indicates whether a human reviews or approves the output.
+
+- risk_level
+  - type: string
+  - description: Overall risk assessment level.
+
+- recommended_measures
+  - type: array
+  - description: Suggested governance actions or next steps.
