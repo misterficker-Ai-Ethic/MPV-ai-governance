@@ -1,27 +1,34 @@
-# MVP AI-Governance
+# AI Governance Assessment
 
-A small AI governance MVP for small businesses.
+This repository contains a small governance data model for documenting AI use cases.
 
-## Overview
-This project explores a lightweight tool for helping small businesses identify AI use cases, assess basic risks, and define first governance actions.
+## Purpose
 
-## Goal
-The goal is to create a simple and structured assessment flow that makes AI usage more visible, understandable, and manageable.
+The goal of this project is to define a simple, structured way to describe an AI use case, the data it uses, the level of human review, and the expected risk level.
 
-## Scope
-This project focuses on:
-- identifying AI use cases
-- capturing basic governance-relevant information
-- assessing early risk signals
-- suggesting first governance actions
+## Repository structure
 
-It does not aim to provide legal advice or a full compliance system.
+- `docs/` contains explanatory documentation such as the field definitions and glossary.
+- `examples/` contains example JSON records that show valid assessment data.
+- `schemas/` contains the JSON Schema used to validate assessment records.
 
-## Repository Structure
-- `docs/` for concepts, definitions, business logic, and planning
-- `schemas/` for JSON structures and validation schemas
-- `examples/` for sample assessment data
-- `src/` for future application code
+## Main files
 
-## Current Status
-Early planning and specification phase.
+- `docs/field-definitions.md` — field list with types, required status, valid values, and descriptions.
+- `examples/example-assessment-01.json` — sample assessment record.
+- `schemas/assessment.schema.json` — JSON Schema for validation.
+
+## How to use
+
+1. Read `docs/field-definitions.md` to understand the fields.
+2. Use `examples/example-assessment-01.json` as a reference for writing new records.
+3. Validate new records against `schemas/assessment.schema.json`.
+
+## Notes
+
+- JSON object field order is mainly for readability; validation depends on the schema, not the display order.
+- The schema is intended to evolve as the governance model grows.
+
+## Next steps
+
+Possible future extensions include additional governance fields, more example records, and validation rules for specific use-case types.
